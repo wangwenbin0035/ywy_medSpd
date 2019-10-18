@@ -1,0 +1,132 @@
+.backlog-warp {
+  display: flex;
+  justify-content: space-between;
+}
+.icon-common {
+  font-size: 26px;
+  width: 26px;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  color: #bfbfbf;
+}
+.left-icon {
+  composes: icon-common;
+}
+.left-icon:hover {
+  background: #f5f5f5;
+  border-radius: 4px;
+}
+.right-icon:hover {
+  background: #f5f5f5;  
+  border-radius: 4px;
+}
+.right-icon {
+  composes: icon-common;
+}
+
+.item-list-warp {
+  width: 100%;
+  overflow: hidden;
+}
+
+.item-list {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: top .6s ease-in-out, left .6s ease-in-out;
+}
+
+.item {
+  float: left;
+  box-sizing: border-box;
+  padding: 20px 10px;
+  background: #fafafa;
+  border-radius: 8px;
+  margin: 0px 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: solid 1px transparent;
+}
+.item-active {
+  box-shadow: 0 1px 4px #1890ff;
+  border-color: #1890ff;
+  color: #1890ff;
+}
+.item-active span {
+  color: #1890ff !important;
+}
+.item:hover {
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15); */
+  /* background: #fffbeb; */
+  border-color: #1890ff;
+  /* border: 1px solid #7e7a74; */
+}
+.item .item-icon {
+  width: 35%;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.item .item-icon img {
+  
+}
+
+.item .item-text {
+  width: 55%
+}
+
+.item .item-text p {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.item .item-text span {
+  font-size: 20px;
+  color: rgba(0, 0, 0, .2);
+}
+
+.card-item-info {
+  background: #fff;
+  padding: 24px 20px;
+  border-radius: 4px;
+  justify-content: space-between;
+  flex-direction: column;
+  display: flex;
+}
+
+.item-odd-status, .item-module-date {
+  display: flex;
+  justify-content: space-between;
+}
+.item-odd-status {
+  margin-bottom: 10px;
+}
+.item-odd {
+  color: rgba(0, 0, 0, 0.6);
+  font-family: Arial;
+  width: 70%;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.item-odd, .item-status {
+  font-size: 18px;
+}
+.item-status {
+  color: #1890ff;
+  font-family: 平方;
+}
+.item-module, .item-date {
+  font-size: 14px;
+  color: rgba(0, 0, 0, .45);
+}
+.item-module {
+  font-family: 平方;
+}
+.item-date {
+  font-family: Arial;
+}

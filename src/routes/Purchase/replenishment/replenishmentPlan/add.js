@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-07-24 18:49:01 
  * @Last Modified by: wwb
- * @Last Modified time: 2019-09-03 16:44:02
+ * @Last Modified time: 2019-10-20 15:18:21
  */
 /**
  * @file 药库 - 补货管理--补货计划--新建计划
@@ -608,6 +608,7 @@ class NewAdd extends PureComponent {
                 query={query}
                 url={replenishmentPlan.QUERYDRUGBYDEPT}
                 isJson={true}
+                hasIndex={true}
                 ref="table"
                 modalLoading={modalLoading}
                 columns={modalColumns}

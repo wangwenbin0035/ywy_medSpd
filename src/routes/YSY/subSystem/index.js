@@ -446,6 +446,7 @@ class SubSystem extends PureComponent{
                 rowKey={'menuId'}
                 size='small'
                 query={query}
+                hasIndex={true}
                 url={url}
                 scroll={{ x: "100%" }}
                 showHeader={true}

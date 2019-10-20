@@ -169,6 +169,7 @@ class Details extends PureComponent{
                     <RemoteTable
                         rowKey="batchNo"
                         query={query}
+                        hasIndex={true}
                         url={statisticAnalysis.GET_PRICE_STATIC_DETAIL}
                         columns={columns}
                     />

@@ -152,6 +152,7 @@ class OrderRetrospect extends PureComponent {
               scroll={{x: '100%'}}
               isJson
               query={query}
+              hasIndex={true}
               url={tracingTotalList.GET_MED_Order_Detail}
               columns={columns}
           />

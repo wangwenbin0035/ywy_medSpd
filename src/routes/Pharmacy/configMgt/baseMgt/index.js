@@ -1,8 +1,8 @@
 /*
  * @Author: 基数药目录管理
  * @Date: 2018-08-28 17:42:54 
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-09-06 21:48:20
+ * @Last Modified by: wwb
+ * @Last Modified time: 2019-10-20 15:12:35
  */
 
 import React , {PureComponent} from 'react';
@@ -159,6 +159,7 @@ class BaseMgt extends PureComponent{
         isJson
         ref='table'
         query={query}
+        hasIndex={true}
         url={baseMgt.FIND_CARDINAL_MADICINE}
         scroll={{x: '100%'}}
           isDetail={true}

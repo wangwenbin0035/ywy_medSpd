@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-08-21 14:27:32 
  * @Last Modified by: wwb
- * @Last Modified time: 2018-08-31 00:56:45
+ * @Last Modified time: 2019-10-20 15:23:47
  */
 
  /**
@@ -291,6 +291,7 @@ class UserMgt extends PureComponent{
           columns={columns}
           bordered
           query={query}
+          hasIndex={true}
           scroll={{ x: '100%' }}
           url={systemMgt.FINDUSERLIST}
           rowKey={'loginName'}

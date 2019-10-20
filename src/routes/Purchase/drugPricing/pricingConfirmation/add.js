@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-07-24 18:49:01 
  * @Last Modified by: wwb
- * @Last Modified time: 2018-09-01 13:09:02
+ * @Last Modified time: 2019-10-20 15:17:22
  */
 /**
  * @file 全院管理 - 药品调价--调价确认--新建调价
@@ -206,6 +206,7 @@ class NewAdd extends PureComponent{
               bordered
               query={query}
               isJson={true}
+              hasIndex={true}
               columns={columns}
               url={drugPricing.SELECT_DRUG_CODE}
               scroll={{ x: '100%' }}

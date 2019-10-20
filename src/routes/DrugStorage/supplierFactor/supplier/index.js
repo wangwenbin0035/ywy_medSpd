@@ -282,6 +282,7 @@ class RecallAndLocked extends PureComponent {
                     onChange={this._tableChange}
                     ref='table'
                     query={query}
+                    hasIndex={true}
                     bordered
                     url={supplierFactor.SUPPLIER_LIST}
                     columns={columns}

@@ -934,6 +934,7 @@ class AddSupplementDocuments extends PureComponent{
               style={{marginTop: 20}}
               url={supplementDoc.addlist}
               scroll={{x: '100%'}}
+              hasIndex={true}
               columns={modalColumns}
               rowKey={'drugCode'}
               rowSelection={{
@@ -979,6 +980,7 @@ class AddSupplementDocuments extends PureComponent{
               url={supplementDoc.addMedHisBackList}
               scroll={{x: '100%'}}
               style={{marginTop: 20}}
+              hasIndex={true}
               columns={abnormalModalColumns}
               rowKey={'backNo'}
               rowSelection={{

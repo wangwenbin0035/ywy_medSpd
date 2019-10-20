@@ -256,6 +256,7 @@ class InventoryAudit extends PureComponent {
         <RemoteTable
           onChange={this._tableChange}
           query={query}
+          hasIndex={true}
           url={common.SHEVE_LIST}
           columns={columns}
           rowKey={'id'}

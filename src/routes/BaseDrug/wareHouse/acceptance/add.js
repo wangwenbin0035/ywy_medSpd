@@ -347,6 +347,7 @@ class AddNewAcceptance extends PureComponent{
                 query={unacceptedQuery}
                 hasInitRequest={false}
                 columns={columns}
+                hasIndex={true}
                 scroll={{ x: '100%' }}
                 url={wareHouse.CHECK_EXAM_DETAIL}
                 rowSelection={{
@@ -372,6 +373,7 @@ class AddNewAcceptance extends PureComponent{
               <RemoteTable
                 ref={(node) => this.acceptedTable = node}
                 query={acceptedQuery}
+                hasIndex={true}
                 hasInitRequest={acceptanceCode !== ''}
                 columns={columns}
                 scroll={{ x: '100%' }}

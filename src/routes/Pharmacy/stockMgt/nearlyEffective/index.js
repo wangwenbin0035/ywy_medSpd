@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-07-24 16:08:53 
  * @Last Modified by: wwb
- * @Last Modified time: 2018-08-06 23:17:40
+ * @Last Modified time: 2019-10-20 15:15:09
  */
 
 /**
@@ -306,6 +306,7 @@ class NearlyEffective extends PureComponent {
             onChange={this._tableChange}
             query={query}
             isJson
+            hasIndex={true}
             columns={columns}
             scroll={{x: '100%'}}
           isDetail={true}

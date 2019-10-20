@@ -237,6 +237,7 @@ class NewRecon extends PureComponent{
                     isJson
                     url={dayStatements.GENERATOR_DAILY_LIST}
                     scroll={{x: '100%'}}
+                    hasIndex={true}
                     columns={columns}
                     rowKey={'id'}
                     cb={(list, data) => {

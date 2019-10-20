@@ -68,6 +68,7 @@ class Putaway extends PureComponent{
         <RemoteTable
           onChange={this._tableChange}
           query={query}
+          hasIndex={true}
           url={goodsAdjust.goodsList}
           scroll={{x: '100%'}}
           isDetail={true}

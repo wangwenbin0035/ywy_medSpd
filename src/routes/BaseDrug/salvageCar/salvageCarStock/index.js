@@ -228,10 +228,11 @@ class salvageStockList extends PureComponent{
                onChange={this._tableChange}
                isJson
                query={query}
+               hasIndex={true}
                ref="salvageCarTable"
                columns={IndexColumns}
                scroll={{x: '100%'}}
-          isDetail={true}
+               isDetail={true}
                rowKey={'batchNo'}
                style={{marginTop: 20}}
                url={salvageCar.GET_SALVGECAR_LIST}

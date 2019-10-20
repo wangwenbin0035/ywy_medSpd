@@ -241,6 +241,7 @@ class AfterAdjustment extends PureComponent {
         <RemoteTable
           onChange={this._tableChange}
           query={query}
+          hasIndex={true}
           url={common.CHECKBILL_LIST}
           columns={columns}
           rowKey={'id'}

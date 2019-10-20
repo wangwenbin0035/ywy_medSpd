@@ -286,6 +286,7 @@ class ClassifyMgt extends PureComponent{
           ref='table'
           columns={columns}
           showHeader={true}
+          hasIndex={true}
           scroll={this.props.scroll || { x: '100%' }}
           url={ysy.ITEMSDATA_LIST}
           rowKey='staticId'

@@ -209,6 +209,7 @@ class Dictionary extends PureComponent{
                 <RemoteTable 
                   data={this.state.gridData}
                   query={query}
+                  hasIndex={true}
                   ref='table'
                   columns={columns}
                   showHeader={true}

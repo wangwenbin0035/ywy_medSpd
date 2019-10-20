@@ -176,6 +176,7 @@ class StockInquiry extends PureComponent {
           showHeader={true}
           query={query}
           ref="tab"
+          hasIndex={true}
           bordered={true}
           scroll={{x: '100%'}}
           columns={columns}

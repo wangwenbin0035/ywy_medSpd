@@ -166,6 +166,7 @@ class NonClinicalDeptSystem extends PureComponent{
           ref='table'
           url={'/Configure/findSubSystemConfigList'}
           rowKey={'dsGuid'}
+          hasIndex={true}
           scroll={{ x:'100%' }}
           query={query}
           columns={columns}

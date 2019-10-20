@@ -372,6 +372,7 @@ class NewInventory extends PureComponent {
           url={common.CHECKBILL_LIST}
           columns={columns}
           rowKey={'id'}
+          hasIndex={true}
           ref="table"
           isDetail={true}
           scroll={{x: '100%' , }}

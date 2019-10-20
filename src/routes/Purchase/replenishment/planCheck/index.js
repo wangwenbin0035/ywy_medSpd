@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-07-24 16:08:53 
  * @Last Modified by: wwb
- * @Last Modified time: 2018-08-31 18:10:57
+ * @Last Modified time: 2019-10-20 15:18:10
  */
 
 /**
@@ -281,6 +281,7 @@ class PlanCheck extends PureComponent{
             columns={columns}
             url={replenishmentPlan.PLANLIST}
             bordered
+            hasIndex={true}
             scroll={{ x: '100%',  }}
             isDetail={true}
             rowKey={'id'}

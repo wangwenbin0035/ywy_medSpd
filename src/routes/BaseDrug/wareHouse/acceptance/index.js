@@ -88,6 +88,7 @@ class Acceptance extends PureComponent{
         <RemoteTable
           onChange={this._tableChange}
           isJson
+          hasIndex={true}
           query={query}
           ref="tab"
           url={acceptance.CHECKACCEPT_LIST}

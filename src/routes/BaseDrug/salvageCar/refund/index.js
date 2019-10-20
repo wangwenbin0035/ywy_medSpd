@@ -215,6 +215,7 @@ class Refund extends PureComponent{
           ref='table'
           query={query}
           bordered
+          hasIndex={true}
           url={salvageCar.GET_RESCUECAR_BACK_LIST}
           scroll={{x: '100%'}}
           isDetail={true}

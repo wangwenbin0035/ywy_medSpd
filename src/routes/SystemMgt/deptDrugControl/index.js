@@ -581,6 +581,7 @@ class DrugDirectory extends PureComponent{
         <RemoteTable 
           ref='modalTableInsert'
           query={modalQuery}
+          hasIndex={true}
           style={{marginTop: 20}}
           columns={columnsModel}
           scroll={{ x: '100%' }}
@@ -601,6 +602,7 @@ class DrugDirectory extends PureComponent{
         style={{marginTop: 20}}
         columns={IndexColumns}
         isDetail={true}
+        hasIndex={true}
         scroll={{ x: '100%',  }}
         url={configMgt.findDepotlist}
         rowSelection={{

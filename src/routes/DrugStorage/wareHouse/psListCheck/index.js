@@ -2,7 +2,7 @@
  * @Author: gaofengjiao 
  * @Date: 2018-08-06
  * @Last Modified by: wwb
- * @Last Modified time: 2018-10-26 16:34:53
+ * @Last Modified time: 2019-10-20 15:11:12
  */
 /**
  * @file 药库 - 入库--配送单验收--列表
@@ -350,6 +350,7 @@ class DistributionCheck extends PureComponent{
           url={wareHouse.depotdistributeList}
           onChange={this._tableChange}
           columns={columns}
+          hasIndex={true}
           isDetail={true}
           scroll={{ x: '100%', }}
           rowKey={'id'}

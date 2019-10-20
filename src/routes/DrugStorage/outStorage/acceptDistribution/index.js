@@ -252,6 +252,7 @@ class Picking extends PureComponent{
           onChange={this._tableChange}
           bordered
           ref='table'
+          hasIndex={true}
           query={query}
           url={outStorage.FINDDISTRIBUTE_LIST}
           isDetail={true}

@@ -2,7 +2,7 @@
  * @Author: gaofengjiao 
  * @Date: 2018-08-06
  * @Last Modified by: wwb
- * @Last Modified time: 2018-10-26 17:22:36
+ * @Last Modified time: 2019-10-20 15:11:16
  */
 /* 
   @file  药库 - 入库--出库单验收-详情
@@ -353,6 +353,7 @@ class PslistCheck extends PureComponent{
                 columns={columns}
                 dataSource={unVerfiyList}
                 loading={loading}
+                hasIndex={true}
                 scroll={{ x: '100%' }}
                 url={wareHouse.CHECK_EXAM_DETAIL}
                 rowKey='key'
@@ -381,6 +382,7 @@ class PslistCheck extends PureComponent{
                 query={acceptedQuery}
                 columns={columns}
                 scroll={{ x: '100%' }}
+                hasIndex={true}
                 url={wareHouse.CHECK_EXAM_DETAIL}
                 rowKey='key'
               />

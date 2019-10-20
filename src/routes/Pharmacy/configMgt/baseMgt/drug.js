@@ -1,8 +1,8 @@
 /*
  * @Author: 药房 - 基数药目录管理 - 药品
  * @Date: 2018-08-28 17:42:54 
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-09-06 21:48:20
+ * @Last Modified by: wwb
+ * @Last Modified time: 2019-10-20 15:12:26
  */
 
 import React , {PureComponent} from 'react';
@@ -347,6 +347,7 @@ class BaseMgt extends PureComponent{
             isJson={true}
             url={drugMgt.ADD_CARDINAL_MEDICINE}
             style={{ marginTop: 16 }} 
+            hasIndex={true}
             columns={modalColumns}
             scroll={{ x: '100%' }}
             rowKey='drugCode'
@@ -367,6 +368,7 @@ class BaseMgt extends PureComponent{
           <RemoteTable
             ref='table'
             query={query}
+            hasIndex={true}
             url={drugMgt.FIND_CARDINAL_MEDICINE_DETAIL}
             scroll={{x: '100%'}}
             columns={columns}

@@ -237,6 +237,7 @@ class Details extends PureComponent {
           <RemoteTable
             isJson={true}
             query={query}
+            hasIndex={true}
             url={settlementMgt.DETAIL_LIST}
             scroll={{x: '100%'}}
             columns={columns}

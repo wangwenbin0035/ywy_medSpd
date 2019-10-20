@@ -144,6 +144,7 @@ class Details extends PureComponent{
                     <RemoteTable
                         rowKey="batchNo"
                         query={query}
+                        hasIndex={true}
                         scroll={{x: '100%'}}
                         url={drugStorage.getDetailList}
                         columns={columns}

@@ -262,6 +262,7 @@ class InventoryAudit extends PureComponent {
           query={query}
           url={common.SHEVE_LIST}
           columns={columns}
+          hasIndex={true}
           rowKey={'id'}
           ref="table"
           scroll={{x: '100%' , }}

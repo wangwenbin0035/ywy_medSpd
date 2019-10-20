@@ -477,6 +477,7 @@ class DrugDirectory extends PureComponent{
         <RemoteTable 
           ref='modalTableInsert'
           query={{}}
+          hasIndex={true}
           style={{marginTop: 20}}
           columns={columnsModel}
           scroll={{ x: '100%', }}
@@ -494,6 +495,7 @@ class DrugDirectory extends PureComponent{
       <RemoteTable
         ref='table'
         query={query}
+        hasIndex={true}
         style={{marginTop: 20}}
         columns={IndexColumns}
         isDetail={true}

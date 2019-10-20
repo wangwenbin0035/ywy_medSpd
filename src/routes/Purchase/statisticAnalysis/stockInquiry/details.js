@@ -156,6 +156,7 @@ class Details extends PureComponent{
                         rowKey="batchNo"
                         scroll={{x: '100%'}}
                         query={query}
+                        hasIndex={true}
                         url={statisticAnalysis.GET_ROOM_REPERTORY_LIST_ALL}
                         columns={columns}
                     />

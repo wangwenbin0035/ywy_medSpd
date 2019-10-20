@@ -250,6 +250,7 @@ class RecallAndLocked extends PureComponent {
           ref='table'
           query={query}
           bordered
+          hasIndex={true}
           url={outStorage.ROOMRECALL_LOCK_LIST}
           columns={columns}
           rowKey={'id'}

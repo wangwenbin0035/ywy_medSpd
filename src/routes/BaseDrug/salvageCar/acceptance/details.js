@@ -303,6 +303,7 @@ class DetailsNewLibrary extends PureComponent{
                 ref={(node) => this.unacceptedTable = node}
                 query={unacceptedQuery}
                 columns={columns}
+                hasIndex={true}
                 scroll={{ x: '100%' }}
                 url={wareHouse.CHECK_EXAM_DETAIL}
                 rowSelection={{
@@ -329,6 +330,7 @@ class DetailsNewLibrary extends PureComponent{
                 ref={(node) => this.acceptedTable = node}
                 query={acceptedQuery}
                 columns={columns}
+                hasIndex={true}
                 scroll={{ x: '100%' }}
                 url={wareHouse.CHECK_EXAM_DETAIL}
                 rowKey='id'

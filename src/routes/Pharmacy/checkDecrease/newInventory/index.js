@@ -371,10 +371,11 @@ class NewInventory extends PureComponent {
           query={query}
           url={common.CHECKBILL_LIST}
           columns={columns}
+          hasIndex={true}
           rowKey={'id'}
           ref="table"
           scroll={{x: '100%'}}
-isDetail={true}
+          isDetail={true}
           style={{marginTop: 20}}
           rowSelection={{
             selectedRowKeys: this.state.selected,

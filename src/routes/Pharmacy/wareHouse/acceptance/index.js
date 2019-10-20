@@ -99,6 +99,7 @@ class Acceptance extends PureComponent{
           isJson
           query={query}
           ref="tab"
+          hasIndex={true}
           url={wareHouse.CHECKACCEPT_LIST}
           scroll={{x: '100%'}}
           isDetail={true}

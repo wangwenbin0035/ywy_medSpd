@@ -261,6 +261,7 @@ class Details extends PureComponent {
             url={dayStatements.DAILY_DETAIL_LIST}
             scroll={{x: '100%'}}
             columns={columns}
+            hasIndex={true}
             rowKey={'id'}
             style={{marginTop: 24}}
           />

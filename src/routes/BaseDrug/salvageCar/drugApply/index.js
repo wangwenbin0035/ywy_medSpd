@@ -81,6 +81,7 @@ class DrugsFor extends PureComponent{
           onChange={this._tableChange}
           ref="tab"
           query={query}
+          hasIndex={true}
           url={salvageCar.GET_RESCUECAR_APPLY_LIST}
           scroll={{x: '100%'}}
           isDetail={true}

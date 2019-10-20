@@ -265,6 +265,7 @@ class JXHPlate extends PureComponent{
             url={ysy.FINDSUBSYSTEMOCNFIGLIST}
             rowKey={'dsGuid'}
             scroll={{ x:'100%' }}
+            hasIndex={true}
             query={{ subSystemId, searchName: this.state.searchName }}
             columns={columns}
             showHeader={true}

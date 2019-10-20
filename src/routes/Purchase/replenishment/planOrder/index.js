@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-07-24 16:08:53 
  * @Last Modified by: wwb
- * @Last Modified time: 2018-10-26 10:23:50
+ * @Last Modified time: 2019-10-20 15:18:14
  */
 
 /**
@@ -335,6 +335,7 @@ class PlanOrder extends PureComponent{
             bordered
             isJson={true}
             query={query}
+            hasIndex={true}
             ref='table'
             isDetail={true}
             scroll={{ x: '100%',  }}

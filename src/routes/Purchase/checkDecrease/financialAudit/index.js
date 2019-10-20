@@ -314,6 +314,7 @@ class InventoryAudit extends PureComponent {
           url={common.SHEVE_LIST}
           columns={columns}
           rowKey={'id'}
+          hasIndex={true}
           ref="table"
           scroll={{x: '100%'}}
           isDetail={true}

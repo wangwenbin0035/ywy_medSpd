@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-07-24 20:15:54 
  * @Last Modified by: wwb
- * @Last Modified time: 2019-09-03 16:23:10
+ * @Last Modified time: 2019-10-20 15:19:22
  */
 /* 
   @file 补货计划 详情
@@ -388,6 +388,7 @@ class ReplenishmentDetail extends PureComponent{
                 title={()=>'查询产品信息'}
                 scroll={{x: '100%'}}
                 query={query}
+                hasIndex={true}
                 //url={'/medicinal-web/a/depot/depotplan/detailXG?planCode='+this.props.match.params.planCode}
                 url={replenishmentPlan.QUERYDRUGBYDEPT}
                 isJson={true}

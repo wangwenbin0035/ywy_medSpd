@@ -2,7 +2,7 @@
  * @Author: gaofengjiao 
  * @Date: 2018-08-06
  * @Last Modified by: wwb
- * @Last Modified time: 2019-09-03 17:09:49
+ * @Last Modified time: 2019-10-20 15:10:59
  */
 /* 
   @file  药库 - 入库--配送单验收-详情
@@ -1008,6 +1008,7 @@ class PslistCheck extends PureComponent{
                 title={()=>'查询产品信息'}
                 scroll={{x: '100%'}}
                 query={query}
+                hasIndex={true}
                 //url={'/medicinal-web/a/depot/depotplan/detailXG?planCode='+this.props.match.params.planCode}
                 url={replenishmentPlan.QUERYDRUGBYDEPT}
                 isJson={true}
@@ -1052,6 +1053,7 @@ class PslistCheck extends PureComponent{
               <RemoteTable 
                 ref={(node) => this.unacceptedTable = node}
                 query={unacceptedQuery}
+                hasIndex={true}
                 columns={columnsUnVerfiy}
                 dataSource={unVerfiyList}
                 loading={loading}
@@ -1090,6 +1092,7 @@ class PslistCheck extends PureComponent{
                 query={acceptedQuery}
                 columns={columnsVerify}
                 scroll={{ x: '100%' }}
+                hasIndex={true}
                 url={wareHouse.CHECK_EXAM_DETAIL}
                 rowKey='key'
               />

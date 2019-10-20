@@ -154,6 +154,7 @@ class Details extends PureComponent{
                     <RemoteTable
                         rowKey="batchNo"
                         query={query}
+                        hasIndex={true}
                         url={salvageCar.GET_RESCUECAR_MEDICEINE_DETAIL_LIST}
                         columns={columns}
                         scroll={{x: '100%'}}

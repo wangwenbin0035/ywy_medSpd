@@ -129,7 +129,7 @@ class RemoteTable extends Component {
           pagination.showTotal=(total, range) => `${range[0]}-${range[1]} 共 ${total} 条`;
           pagination.pageSize = pagination.pageSize ?  pagination.pageSize : ( this.props.pagesize || this.defaultPageSize );
           
-          if(!params.pageNo) {
+          if(!params.pageNo || params.pageNo === 1) {
             pagination.current = 1;
           }
           this.setState({
@@ -171,7 +171,6 @@ class RemoteTable extends Component {
       query,
       pagination
     } = this.props; 
-    columns = [...columns];
     columns = columns.map((item, i) => {
       if(item.dataIndex === query.sortField) {
         item.defaultSortOrder = query.sortOrder;
@@ -180,6 +179,20 @@ class RemoteTable extends Component {
     });
     pagination = pagination ? {...this.state.pagination, ...pagination} : this.state.pagination;
     scroll = scroll ? {...scroll, ...this.state.scroll} : this.state.scroll;
+    if(this.props.hasIndex){
+      columns = [
+        { 
+          title: '序号',
+          dataIndex: 'index',
+          width: 50,
+          fixed: 'left',
+          render: (text,record,index) => (pagination.current -1) * pagination.pageSize + index + 1
+        },
+          ...columns
+        ];
+    }else{
+      columns = [...columns];
+    }
     return (
       <Table 
         {...this.props}

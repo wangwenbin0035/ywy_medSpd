@@ -504,6 +504,7 @@ class AddSupplementDocuments extends PureComponent{
               isJson={true}
               url={supplementDoc.addProductList}
               scroll={{x: '100%'}}
+              hasIndex={true}
               columns={modalColumns}
               rowKey={'id'}
               rowSelection={{

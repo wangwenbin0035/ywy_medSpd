@@ -127,6 +127,7 @@ class Output extends PureComponent{
         <RemoteTable
           onChange={this._tableChange}
           query={query}
+          hasIndex={true}
           url={outStorage.OUTSTORELIST}
           rowSelection={{
             onChange:(selectedRowKeys,selectedRows)=>{

@@ -206,6 +206,7 @@ class ProfiLossRecord extends PureComponent {
         <RemoteTable
           onChange={this._tableChange}
           query={query}
+          hasIndex={true}
           url={profiLossRecord.CAUSTICEXCESSIVE_LIST}
           columns={columns}
           rowKey={'id'}

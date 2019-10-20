@@ -198,6 +198,7 @@ class Statements extends PureComponent{
                     isJson
                     rowKey="id"
                     query={query}
+                    hasIndex={true}
                     columns={columns}
                     isDetail={true}
                     scroll={{ x: '100%',  }}

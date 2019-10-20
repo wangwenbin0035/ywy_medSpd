@@ -88,6 +88,7 @@ class Refine extends PureComponent{
           size={'small'}
           scroll={{ x: '100%' }}
           columns={columns}
+          hasIndex={true}
           rowKey={'menuId'}
           showHeader={true}
         />

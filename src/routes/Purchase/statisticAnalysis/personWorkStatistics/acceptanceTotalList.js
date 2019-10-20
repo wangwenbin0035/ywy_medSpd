@@ -60,6 +60,7 @@ class OrderRetrospect extends PureComponent {
           columns={columns}
           style={{marginTop: 20}}
           ref='table'
+          hasIndex={true}
           rowKey={'id'}
           url={tracingTotalList.GET_Checkaccept_Details}
         />

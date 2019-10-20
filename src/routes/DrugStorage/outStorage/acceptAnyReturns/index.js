@@ -276,6 +276,7 @@ class PickSoldOut extends PureComponent{
         <RemoteTable
           onChange={this._tableChange}
           bordered
+          hasIndex={true}
           ref='table'
           query={query}
           url={outStorage.FINDPICKINGORDER_LIT}

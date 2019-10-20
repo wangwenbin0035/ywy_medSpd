@@ -125,6 +125,7 @@ class Details extends PureComponent{
                     <RemoteTable
                         rowKey="batchNo"
                         query={query}
+                        hasIndex={true}
                         columns={columns}
                     />
                 </div>

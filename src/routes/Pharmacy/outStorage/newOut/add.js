@@ -447,6 +447,7 @@ class AddOutput extends PureComponent{
           <RemoteTable
             isJson={true}
             query={query}
+            hasIndex={true}
             url={outStorage.GETFILTERDRUGINFO}
             rowSelection={{
               selectedRowKeys: selectedRowKeyModal,

@@ -305,6 +305,7 @@ class DetailsNewLibrary extends PureComponent{
               <RemoteTable 
                 ref={(node) => this.unacceptedTable = node}
                 query={unacceptedQuery}
+                hasIndex={true}
                 columns={columns}
                 scroll={{ x: '100%' }}
                 url={wareHouse.CHECK_EXAM_DETAIL}
@@ -332,6 +333,7 @@ class DetailsNewLibrary extends PureComponent{
                 ref={(node) => this.acceptedTable = node}
                 query={acceptedQuery}
                 columns={columns}
+                hasIndex={true}
                 scroll={{ x: '100%' }}
                 url={wareHouse.CHECK_EXAM_DETAIL}
                 rowKey='id'

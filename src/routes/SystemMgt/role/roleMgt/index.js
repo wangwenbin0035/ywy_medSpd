@@ -78,6 +78,7 @@ class RoleMgt extends PureComponent{
           ref='table'
           method='GET'
           query={query}
+          hasIndex={true}
           style={{marginTop: 20}}
           columns={columns}
           scroll={{ x: '100%' }}

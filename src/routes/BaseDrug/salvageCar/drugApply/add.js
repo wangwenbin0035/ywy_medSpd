@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-07-24 18:49:01 
  * @Last Modified by: wwb
- * @Last Modified time: 2018-08-31 00:06:02
+ * @Last Modified time: 2019-10-20 15:04:15
  */
 /**
  * @file 基数药 - 申领 - 新建
@@ -356,6 +356,7 @@ class NewAdd extends PureComponent {
               url={salvageCar.RESCUECAR_APPLY_QUERY_DRUG}
               isJson={true}
               ref="table"
+              hasIndex={true}
               modalLoading={modalLoading}
               columns={modalColumns}
               scroll={{ x: '100%' }}

@@ -72,9 +72,10 @@ class NewLibrary extends PureComponent{
             onChange={this._tableChange}
             isJson
             query={query}
+            hasIndex={true}
             url={wareHouse.FIND_STORE_PAGE}
             scroll={{x: '100%'}}
-          isDetail={true}
+            isDetail={true}
             columns={columns}
             rowKey={'id'}
             style={{marginTop: 20}}

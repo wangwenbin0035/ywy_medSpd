@@ -187,6 +187,7 @@ class UserMgt extends PureComponent{
           ref='table'
           style={{marginTop: 20}}
           columns={columns}
+          hasIndex={true}
           scroll={{ x: '100%' }}
           rowKey='ctmaSupplierCode'
           url={systemMgt.SupplierList}

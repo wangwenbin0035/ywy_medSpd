@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-08-28 17:42:54 
  * @Last Modified by: wwb
- * @Last Modified time: 2019-09-03 16:59:41
+ * @Last Modified time: 2019-10-20 15:23:14
  */
 
 import React , {PureComponent} from 'react';
@@ -446,9 +446,11 @@ class DrugDirectory extends PureComponent{
         </Modal>
         <RemoteTable
           onChange={this._tableChange}
+          hasIndex={true}
           ref='table'
           bordered
           query={query}
+          hasIndex={true}
           url={systemMgt.MEDICINEMATERIAL_LIST}
           scroll={{x: '100%'}}
           isDetail={true}

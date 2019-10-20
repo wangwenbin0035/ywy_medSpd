@@ -422,6 +422,7 @@ class DetailsPutaway extends PureComponent{
               ref={(node) => this.listwsjTable = node}
               loading={loading}
               query={listwsjQuery}
+              hasIndex={true}
               columns={notColumns}
               scroll={{ x: '100%' }}
               dataSource={listwsjData}
@@ -449,6 +450,7 @@ class DetailsPutaway extends PureComponent{
               ref={(node) => this.listysjTable = node}
               query={listysjQuery}
               columns={hasColumns}
+              hasIndex={true}
               scroll={{ x: '100%' }}
               url={wareHouse.SHELF_INFO_LIST}
               rowKey='id'

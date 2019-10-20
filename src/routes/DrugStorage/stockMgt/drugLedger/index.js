@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-07-24 16:08:53 
  * @Last Modified by: wwb
- * @Last Modified time: 2018-08-06 23:17:40
+ * @Last Modified time: 2019-10-20 15:09:23
  */
 
 /**
@@ -311,6 +311,7 @@ class DrugLedger extends PureComponent {
           onChange={this._tableChange}
           query={query}
           columns={columns}
+          hasIndex={true}
           isDetail={true}
           scroll={{x: '100%' ,  }}
           style={{marginTop: 20}}

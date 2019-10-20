@@ -216,9 +216,10 @@ class salvageLadgerList extends PureComponent{
                isJson
                query={query}
                ref="modifyPrice"
+               hasIndex={true}
                columns={IndexColumns}
                scroll={{x: '100%'}}
-          isDetail={true}
+               isDetail={true}
                rowKey={'updatePriceNo'}
                style={{marginTop: 20}}
                url={statisticAnalysis.GET_PRICE_STATIC_LIST}

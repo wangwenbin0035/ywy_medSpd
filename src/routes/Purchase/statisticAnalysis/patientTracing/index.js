@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-07-24 16:08:53 
  * @Last Modified by: wwb
- * @Last Modified time: 2019-09-03 17:06:52
+ * @Last Modified time: 2019-10-20 15:20:35
  */
 
 /**
@@ -261,6 +261,7 @@ class OrderRetrospect extends PureComponent {
         <RemoteTable
           onChange={this._tableChange}
           query={query}
+          hasIndex={true}
           scroll={{x: '100%', y: 300}}
           isJson
           columns={columns}

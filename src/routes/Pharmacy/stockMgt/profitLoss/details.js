@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-07-24 20:15:54 
  * @Last Modified by: wwb
- * @Last Modified time: 2018-08-31 00:16:10
+ * @Last Modified time: 2019-10-20 15:15:13
  */
 /* 
   @file 损益分析 详情
@@ -228,6 +228,7 @@ class Detail extends PureComponent{
           <hr className="hr" />
           <RemoteTable
             query={query}
+            hasIndex={true}
             scroll={{x: '100%'}}
             columns={columns}
             rowKey={'id'}

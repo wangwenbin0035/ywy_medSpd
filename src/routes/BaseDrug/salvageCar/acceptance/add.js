@@ -348,6 +348,7 @@ class AddNewAcceptance extends PureComponent{
                 hasInitRequest={false}
                 query={unacceptedQuery}
                 columns={columns}
+                hasIndex={true}
                 scroll={{ x: '100%' }}
                 url={wareHouse.CHECK_EXAM_DETAIL}
                 rowSelection={{
@@ -375,6 +376,7 @@ class AddNewAcceptance extends PureComponent{
                 hasInitRequest={acceptanceCode !== ''}
                 query={acceptedQuery}
                 columns={columns}
+                hasIndex={true}
                 scroll={{ x: '100%' }}
                 url={wareHouse.CHECK_EXAM_DETAIL}
                 rowKey='id'

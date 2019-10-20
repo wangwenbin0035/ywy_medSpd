@@ -221,6 +221,7 @@ class Picking extends PureComponent{
         <RemoteTable
           onChange={this._tableChange}
           bordered
+          hasIndex={true}
           url={outStorage.FINDDISTRIBUTE_LIST}
           ref='table'
           query={query}

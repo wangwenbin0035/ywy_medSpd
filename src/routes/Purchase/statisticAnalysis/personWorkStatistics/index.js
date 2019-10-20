@@ -2,7 +2,7 @@
  * @Author: wwb
  * @Date: 2018-07-24 16:08:53
  * @Last Modified by: wwb
- * @Last Modified time: 2019-09-03 17:11:27
+ * @Last Modified time: 2019-10-20 15:21:11
  */
 
 /**
@@ -339,6 +339,7 @@ class OrderRetrospect extends PureComponent {
           query={query}
           scroll={{x: '100%', y: 300}}
           isJson
+          hasIndex={true}
           columns={columns}
           style={{marginTop: 20}}
           ref='table'

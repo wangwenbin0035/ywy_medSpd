@@ -1,8 +1,8 @@
 /*
  * @Author: 抢救车目录管理
  * @Date: 2018-08-28 17:42:54 
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-09-06 21:48:20
+ * @Last Modified by: wwb
+ * @Last Modified time: 2019-10-20 15:13:29
  */
 
 import React , {PureComponent} from 'react';
@@ -181,6 +181,7 @@ class BaseMgt extends PureComponent{
         onChange={this._tableChange}
         isJson
         ref='table'
+        hasIndex={true}
         query={query}//a/rescuecardetail/findRescuecarMedicineList
         url={baseMgt.FIND_RESCUECAR_MADICINE_LIST}
         scroll={{x: '100%'}}

@@ -426,6 +426,7 @@ class DepartmentMgt extends PureComponent{
           query={query}
           style={{marginTop: 20}}
           columns={columns}
+          hasIndex={true}
           scroll={{ x: '100%' }}
           url={systemMgt.DeptList}
           onChange={this._tableChange}
@@ -577,6 +578,7 @@ class DepartmentMgt extends PureComponent{
               style={{marginTop: 20}}
               columns={subModalCol}
               scroll={{ x: '100%' }}
+              hasIndex={true}
               url={systemMgt.findHisDept}
               rowClassName={ (record) => subModalSelectRow.id === record.id ? 'rowClassBg' : ''}
               onRow={ (record) => {
@@ -613,6 +615,7 @@ class DepartmentMgt extends PureComponent{
               style={{marginTop: 20}}
               columns={goodsModalCol}
               scroll={{ x: '100%' }}
+              hasIndex={true}
               url={systemMgt.getGoodsLocationInfo}
               rowClassName={ (record) => goodsModalSelectRow.id === record.id ? 'rowClassBg' : ''}
               onRow={ (record) => {

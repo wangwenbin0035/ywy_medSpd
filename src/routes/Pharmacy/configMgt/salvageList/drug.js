@@ -1,8 +1,8 @@
 /*
  * @Author: 药房 - 抢救车目录管理 - 药品
  * @Date: 2018-08-28 17:42:54 
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-09-06 21:48:20
+ * @Last Modified by: wwb
+ * @Last Modified time: 2019-10-20 15:13:20
  */
 
 import React , {PureComponent} from 'react';
@@ -357,6 +357,7 @@ class BaseMgt extends PureComponent{
           <RemoteTable
             query={medalQuery}
             isJson={true}
+            hasIndex={true}
             url={baseMgt.ADD_RESCUECAR_MEDICINE}
             style={{ marginTop: 16 }} 
             columns={modalColumns}
@@ -378,6 +379,7 @@ class BaseMgt extends PureComponent{
           <RemoteTable
             ref='table'
             query={query}
+            hasIndex={true}
             url={baseMgt.FIND_RESCUECA_CARDINAL_MADICINE}
             scroll={{x: '100%'}}
             columns={columns}

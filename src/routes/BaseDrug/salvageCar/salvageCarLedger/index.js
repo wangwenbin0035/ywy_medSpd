@@ -350,10 +350,11 @@ class salvageLadgerList extends PureComponent{
               </Row>
               <RemoteTable
                query={query}
+               hasIndex={true}
                ref="salvageCarLedgerTable"
                columns={IndexColumns}
                scroll={{x: '100%'}}
-          isDetail={true}
+               isDetail={true}
                rowKey={'id'}
                style={{marginTop: 20}}
                url={salvageCar.GET_DRUG_LEDGER}

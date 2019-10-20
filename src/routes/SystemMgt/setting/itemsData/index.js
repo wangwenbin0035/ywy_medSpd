@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-08-21 15:45:52 
  * @Last Modified by: wwb
- * @Last Modified time: 2018-09-06 17:53:32
+ * @Last Modified time: 2019-10-20 15:23:56
  */
  /**
  * @file 系统管理--系统设置--字典管理
@@ -213,6 +213,7 @@ class ItemsData extends PureComponent{
           ref="table"
           columns={columns}
           scroll={{x: '100%'}}
+          hasIndex={true}
           rowKey={'id'}
           style={{marginTop: 20}}
           url={systemMgt.DICTIONARYLIST}

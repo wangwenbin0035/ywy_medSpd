@@ -241,6 +241,7 @@ class StockInquiry extends PureComponent {
           url={drugStorage.queryDrugByDept}
           isJson={true}
           query={query}
+          hasIndex={true}
           ref="tab"
           bordered={true}
           style={{marginTop: 20}}

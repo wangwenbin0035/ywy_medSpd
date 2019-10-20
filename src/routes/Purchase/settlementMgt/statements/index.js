@@ -155,11 +155,12 @@ class SettlementMgt extends PureComponent {
                 <RemoteTable
                     query={query}
                     style={{marginTop: 20}}
+                    hasIndex={true}
                     url={settlementMgt.SETTLE_LIST}
                     columns={columns}
                     rowKey={'id'}
                     scroll={{x: '100%'}}
-          isDetail={true}
+                    isDetail={true}
                 />
             </div>
         )

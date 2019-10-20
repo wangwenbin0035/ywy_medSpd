@@ -44,6 +44,7 @@ class OrderRetrospect extends PureComponent {
           scroll={{x: '100%', y: 300}}
           isJson
           columns={columns}
+          hasIndex={true}
           style={{marginTop: 20}}
           ref='table'
           rowKey={this.props.match.params.userid}

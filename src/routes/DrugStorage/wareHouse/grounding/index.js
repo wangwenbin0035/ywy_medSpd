@@ -80,6 +80,7 @@ class Putaway extends PureComponent{
           onChange={this._tableChange}
           query={query}
           ref="tab"
+          hasIndex={true}
           url={wareHouse.ROOMACCEPTANCE}
           scroll={{x: '100%',}}
           isDetail={true}

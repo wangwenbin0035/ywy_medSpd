@@ -128,6 +128,7 @@ class Details extends PureComponent{
                         rowKey="id"
                         scroll={{x: '100%'}}
                         query={query}
+                        hasIndex={true}
                         url={drugPricing.CHECK_PRICE_DETAIL}
                         columns={columns}
                     />

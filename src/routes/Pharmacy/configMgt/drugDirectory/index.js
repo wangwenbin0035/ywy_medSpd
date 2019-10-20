@@ -490,6 +490,7 @@ class DrugDirectory extends PureComponent{
           query={{}}
           style={{marginTop: 20}}
           columns={columns}
+          hasIndex={true}
           scroll={{ x: '100%' }}
           url={configMgt.findDepotFilterList}
           rowSelection={{
@@ -505,6 +506,7 @@ class DrugDirectory extends PureComponent{
         onChange={this._tableChange}
         ref='table'
         query={query}
+        hasIndex={true}
         style={{marginTop: 20}}
         columns={IndexColumns}
         isDetail={true}

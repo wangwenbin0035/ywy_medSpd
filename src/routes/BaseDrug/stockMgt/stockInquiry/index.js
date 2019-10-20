@@ -200,6 +200,7 @@ class StockInquiry extends PureComponent {
           isJson={true}
           style={{marginTop: 20}}
           query={query}
+          hasIndex={true}
           ref="tab"
           scroll={{x: '100%'}}
           isDetail={true}

@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-07-24 18:49:01 
  * @Last Modified by: wwb
- * @Last Modified time: 2018-08-31 00:06:02
+ * @Last Modified time: 2019-10-20 15:16:36
  */
 /**
  * @file 药房 - 申领 - 新建
@@ -493,6 +493,7 @@ class NewAdd extends PureComponent {
               url={wareHouse.QUERYDRUGBYDEPT_PHARMACY}
               isJson={true}
               ref="table"
+              hasIndex={true}
               modalLoading={modalLoading}
               columns={modalColumns}
               scroll={{ x: '100%' }}

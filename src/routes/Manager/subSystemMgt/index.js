@@ -361,6 +361,7 @@ class SubSystemMgt extends PureComponent{
           query={this.state.query} 
           columns={columns}
           ref='table'
+          hasIndex={true}
           url={jxh.GETSUBSYSTEMS}
           rowKey='deployOrgSubSystemGuid'
           size='small'

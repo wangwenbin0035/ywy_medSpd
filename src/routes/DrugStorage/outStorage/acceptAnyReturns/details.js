@@ -320,6 +320,7 @@ class DetailsPickSoldOut extends PureComponent{
               query={pendingQuery}
               columns={columns}
               scroll={{ x: '100%' }}
+              hasIndex={true}
               url={outStorage.PICKING_DETAIL_LIST}
               rowSelection={{
                 selectedRowKeys: this.state.selected,
@@ -351,6 +352,7 @@ class DetailsPickSoldOut extends PureComponent{
               query={pickedQuery}
               columns={readyPickingColumns}
               scroll={{ x: '100%' }}
+              hasIndex={true}
               url={outStorage.PICKING_DETAIL_LIST}
               rowKey='id'
             />

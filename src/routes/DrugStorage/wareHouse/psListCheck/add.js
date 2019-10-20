@@ -1,8 +1,8 @@
 /*
  * @Author: gaofengjiao 
  * @Date: 2018-08-06
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2018-08-27 11:41:01
+ * @Last Modified by: wwb
+ * @Last Modified time: 2019-10-20 15:10:49
  */
 /* 
   @file  药库 - 入库--配送单验收-新建
@@ -878,6 +878,7 @@ class PslistAdd extends PureComponent{
                 ref={(node) => this.unacceptedTable = node}
                 hasInitRequest={false}
                 query={unacceptedQuery}
+                hasIndex={true}
                 columns={columnsUnVerfiy}
                 dataSource={unVerfiyList}
                 scroll={{ x: '100%' }}
@@ -916,6 +917,7 @@ class PslistAdd extends PureComponent{
                 query={acceptedQuery}
                 columns={columnsVerify}
                 scroll={{ x: '100%' }}
+                hasIndex={true}
                 url={wareHouse.CHECK_EXAM_DETAIL}
                 rowKey='key'
               />

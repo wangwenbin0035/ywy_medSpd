@@ -104,6 +104,7 @@ class Acceptance extends PureComponent{
           ref="tab"
           url={salvageCar.CHECK_RESCUECAR_LIST}
           scroll={{x: '100%'}}
+          hasIndex={true}
           isDetail={true}
           columns={columns}
           rowKey={'id'}

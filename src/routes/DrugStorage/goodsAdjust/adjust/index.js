@@ -82,6 +82,7 @@ class Putaway extends PureComponent{
           url={goodsAdjust.goodsList}
           scroll={{x: '100%'}}
           isDetail={true}
+          hasIndex={true}
           columns={columns}
           rowKey={'locAdjustNo'}
           style={{marginTop: 24}}

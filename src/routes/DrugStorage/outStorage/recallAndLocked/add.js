@@ -509,6 +509,7 @@ class AddRefund extends PureComponent{
               ref="table"
               bordered
               isJson={true}
+              hasIndex={true}
               url={outStorage.RECALLORLOCKADDPRODUCT_LIST}
               scroll={{x: '100%'}}
               columns={modalColumns}

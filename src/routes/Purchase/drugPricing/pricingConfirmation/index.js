@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-07-24 16:08:53 
  * @Last Modified by: wwb
- * @Last Modified time: 2018-08-06 23:17:40
+ * @Last Modified time: 2019-10-20 15:17:33
  */
 
 /**
@@ -157,6 +157,7 @@ class PricingConfirmation extends PureComponent {
           columns={columns}
           scroll={{x: '100%'}}
           isDetail={true}
+          hasIndex={true}
           style={{marginTop: 20}}
           ref='table'
           rowKey={'id'}

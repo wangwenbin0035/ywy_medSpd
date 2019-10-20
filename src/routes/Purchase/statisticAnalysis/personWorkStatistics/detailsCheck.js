@@ -97,6 +97,7 @@ class Details extends PureComponent{
                         scroll={{x: '100%'}}
                         query={query}
                         isJson
+                        hasIndex={true}
                         url={tracingTotalList.GET_Check_List_Detail}
                         columns={columns}
                     />

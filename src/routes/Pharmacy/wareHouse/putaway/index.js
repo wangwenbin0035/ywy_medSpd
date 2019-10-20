@@ -71,6 +71,7 @@ class Putaway extends PureComponent{
           url={wareHouse.ROOMACCEPTANCE}
           query={query}
           scroll={{x: '100%'}}
+          hasIndex={true}
           isDetail={true}
           columns={columns}
           rowKey={'id'}

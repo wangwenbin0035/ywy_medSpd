@@ -1,8 +1,8 @@
 /*
  * @Author: gaofengjiao 
  * @Date: 2018-08-06 16:37:22 
- * @Last Modified by: gaofengjiao
- * @Last Modified time: 2018-08-06 16:37:22 
+ * @Last Modified by: wwb
+ * @Last Modified time: 2019-10-20 15:06:49
  */
 /**
  * @file 药库 - 货位调整--新建货位
@@ -464,6 +464,7 @@ class NewAddGoodsAdjust extends PureComponent{
           </Row>
           <RemoteTable
             query={query}
+            hasIndex={true}
             isJson={true}
             url={goodsAdjust.roomDrugList}
             style={{ marginTop: 16 }} 

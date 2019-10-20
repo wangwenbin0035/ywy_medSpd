@@ -629,6 +629,7 @@ class AddRefund extends PureComponent{
               query={query}
               ref="table"
               bordered
+              hasIndex={true}
               isJson={true}
               url={outStorage.BACKSTORAGE_ADDPRODUCT_LIST}
               scroll={{x: '100%'}}

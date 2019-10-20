@@ -145,6 +145,7 @@ class Details extends PureComponent{
                         rowKey="batchNo"
                         scroll={{x: '100%'}}
                         query={query}
+                        hasIndex={true}
                         url={drugStorage.getDetailList}
                         columns={columns}
                     />

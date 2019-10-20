@@ -356,6 +356,7 @@ class DrugDirectory extends PureComponent{
         onChange={this._tableChange}
         ref='table'
         query={query}
+        hasIndex={true}
         style={{marginTop: 20}}
         columns={IndexColumns}
         scroll={{ x: '100%',  }}

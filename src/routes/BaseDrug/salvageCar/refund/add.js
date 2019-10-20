@@ -615,6 +615,7 @@ class AddSalvageTruck extends PureComponent{
               query={query}
               ref="table"
               bordered
+              hasIndex={true}
               isJson={true}
               url={salvageCar.RESCUECAR_BACK_ADD_LIST}
               scroll={{x: '100%'}}

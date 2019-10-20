@@ -137,6 +137,7 @@ class Putaway extends PureComponent{
           columns={columns}
           onChange={this._tableChange}
           query={query}
+          hasIndex={true}
           rowKey={'id'}
           ref="infoTable"
           style={{marginTop: 20}}
@@ -178,6 +179,7 @@ class Putaway extends PureComponent{
             style={{marginTop: 20}}
             columns={abnormalModalColumns}
             rowKey={'dispensingNo'}
+            hasIndex={true}
             rowSelection={{
               selectedRowKeys: this.state.modalSelected,
               onChange: (selectedRowKeys, selectedRows) => {

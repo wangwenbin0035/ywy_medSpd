@@ -116,6 +116,7 @@ class Details extends PureComponent{
                         rowKey="batchNo"
                         scroll={{x: '100%'}}
                         isJson
+                        hasIndex={true}
                         query={query}
                         url={tracingTotalList.GET_Purchase_Order_List}
                         columns={columns}

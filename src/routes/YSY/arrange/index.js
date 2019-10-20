@@ -383,6 +383,7 @@ class Arrange extends PureComponent{
         columns={columns}
         query={this.state.query}
         rowKey={'deployId'}
+        hasIndex={true}
         size={'small'}
         showHeader={true}
       />

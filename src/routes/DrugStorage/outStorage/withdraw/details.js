@@ -395,6 +395,7 @@ class DetailsOutput extends PureComponent{
                 title={()=>'查询产品信息'}
                 scroll={{x: '100%'}}
                 query={query}
+                hasIndex={true}
                 url={replenishmentPlan.QUERYDRUGBYDEPT}
                 isJson={true}
                 ref="table"

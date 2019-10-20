@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-07-24 16:08:53 
  * @Last Modified by: wwb
- * @Last Modified time: 2018-08-31 20:18:36
+ * @Last Modified time: 2019-10-20 15:19:13
  */
 
 /**
@@ -239,6 +239,7 @@ class OutCatalogPurchase extends PureComponent{
         <RemoteTable
           ref='table'
           query={query}
+          hasIndex={true}
           onChange={this._tableChange}
           url={replenishmentPlan.PLANLIST}
           columns={columns}

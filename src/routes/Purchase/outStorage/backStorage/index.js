@@ -258,6 +258,7 @@ class Refund extends PureComponent{
           ref='table'
           query={query}
           bordered
+          hasIndex={true}
           url={outStorage.FINDCOMMONBACK_LIST}
           scroll={{x: '100%'}}
           isDetail={true}

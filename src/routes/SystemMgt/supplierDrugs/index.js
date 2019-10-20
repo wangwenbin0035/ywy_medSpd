@@ -370,6 +370,7 @@ class DrugDirectory extends PureComponent{
         query={query}
         isJson={true}
         style={{marginTop: 20}}
+        hasIndex={true}
         columns={columns}
         isDetail={true}
         scroll={{ x: '100%',  }}

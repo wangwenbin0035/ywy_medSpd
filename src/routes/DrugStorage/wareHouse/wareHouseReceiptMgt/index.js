@@ -89,6 +89,7 @@ class Putaway extends PureComponent{
           onChange={this._tableChange}
           isJson
           query={query}
+          hasIndex={true}
           url={wareHouse.depotinstoreList}
           ref="tab"
           isDetail={true}

@@ -305,6 +305,7 @@ class DetailsPickSoldOut extends PureComponent{
             <RemoteTable 
               ref={(node) => this.pickingTable = node}
               query={pendingQuery}
+              hasIndex={true}
               columns={columns}
               scroll={{ x: '100%' }}
               url={outStorage.PICKING_DETAIL_LIST}
@@ -336,6 +337,7 @@ class DetailsPickSoldOut extends PureComponent{
             <RemoteTable 
               ref={(node) => this.pickedTable = node}
               query={pickedQuery}
+              hasIndex={true}
               columns={readyPickingColumns}
               scroll={{ x: '100%' }}
               url={outStorage.PICKING_DETAIL_LIST}

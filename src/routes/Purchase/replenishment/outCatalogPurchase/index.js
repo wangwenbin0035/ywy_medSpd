@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-07-24 16:08:53 
  * @Last Modified by: wwb
- * @Last Modified time: 2018-08-31 20:18:36
+ * @Last Modified time: 2019-10-20 15:18:06
  */
 
 /**
@@ -242,6 +242,7 @@ class OutCatalogPurchase extends PureComponent{
           onChange={this._tableChange}
           url={replenishmentPlan.PLANLIST}
           columns={columns}
+          hasIndex={true}
           scroll={{ x: '100%',  }}
           isDetail={true}
           rowKey={'id'}

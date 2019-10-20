@@ -503,6 +503,7 @@ class AddRefund extends PureComponent{
               query={query}
               ref="table"
               bordered
+              hasIndex={true}
               isJson={true}
               url={outStorage.RECALLORLOCKADDPRODUCT_LOCK_LIST}
               scroll={{x: '100%'}}

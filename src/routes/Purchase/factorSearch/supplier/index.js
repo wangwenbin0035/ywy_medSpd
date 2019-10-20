@@ -232,6 +232,7 @@ class RecallAndLocked extends PureComponent {
                     ref='table'
                     query={query}
                     bordered
+                    hasIndex={true}
                     url={supplierFactor.SUPPLIER_LIST}
                     columns={columns}
                     rowKey={'id'}

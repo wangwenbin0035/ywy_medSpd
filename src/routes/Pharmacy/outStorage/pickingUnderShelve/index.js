@@ -258,6 +258,7 @@ class PickSoldOut extends PureComponent{
           onChange={this._tableChange}
           bordered
           ref='table'
+          hasIndex={true}
           query={query}
           url={outStorage.FINDPICKINGORDER_LIT}
           scroll={{x: '100%'}}

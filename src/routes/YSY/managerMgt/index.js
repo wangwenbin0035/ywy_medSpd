@@ -125,6 +125,7 @@ class ManagerMgt extends PureComponent{
           columns={columns}
           rowKey='userId'
           size='small'
+          hasIndex={true}
           scroll={{ x: '100%' }}
           showHeader={true}
         />

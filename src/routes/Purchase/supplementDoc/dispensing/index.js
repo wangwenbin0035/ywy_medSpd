@@ -124,6 +124,7 @@ class Putaway extends PureComponent{
           query={query}
           style={{marginTop: 20}}
           columns={columns}
+          hasIndex={true}
           loading={this.state.loading}
           isDetail={true}
           scroll={{ x: '100%',  }}

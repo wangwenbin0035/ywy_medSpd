@@ -195,6 +195,7 @@ class GoodsAllocation extends PureComponent{
             query={query}
             style={{marginTop: 20}}
             columns={columns}
+            hasIndex={true}
             scroll={{ x: '100%' }}
             url={systemMgt.goodsAllocation}
             rowSelection={{

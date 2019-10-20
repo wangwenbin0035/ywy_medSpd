@@ -2,7 +2,7 @@
  * @Author: wwb 
  * @Date: 2018-07-24 20:15:54 
  * @Last Modified by: wwb
- * @Last Modified time: 2018-08-31 00:16:10
+ * @Last Modified time: 2019-10-20 15:21:41
  */
 /* 
   @file 损益分析 详情
@@ -242,6 +242,7 @@ class Detail extends PureComponent{
             query={query}
             scroll={{x: '100%'}}
             columns={columns}
+            hasIndex={true}
             rowKey={'id'}
             url={statisticAnalysis.PROFIT_LOSS_DETAIL_LIST}
           />

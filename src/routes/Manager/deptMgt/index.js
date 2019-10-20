@@ -440,6 +440,7 @@ class DeptMgt extends PureComponent{
         </Modal>
         <RemoteTable 
           ref='table'
+          hasIndex={true}
           url={jxh.DEPT_LIST}
           rowKey={'deptGuid'}
           scroll={{ x:'100%' }}
